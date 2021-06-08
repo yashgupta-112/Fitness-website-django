@@ -1,0 +1,287 @@
+{% extends 'transform/basic.html' %}
+{% block title %}SaiyanEvolution
+{% endblock  %}
+<style>
+    li {
+        text-align: left;
+    }
+    
+    ul.a {
+        list-style-type: none;
+    }
+    
+    @media (max-width: 768px) {
+        .carousel-inner .carousel-item>div {
+            display: none;
+        }
+        .carousel-inner .carousel-item>div:first-child {
+            display: block;
+        }
+    }
+    
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+    /* display 3 */
+    
+    @media (min-width: 768px) {
+        .carousel-inner .carousel-item-right.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(33.333%);
+        }
+        .carousel-inner .carousel-item-left.active,
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-33.333%);
+        }
+    }
+    
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left {
+        transform: trans lateX(0);
+    }
+    
+    img {
+        height: 626px;
+        width: 496px;
+    }
+</style>
+{% block body %}
+<!-- card crousel -->
+<div class="container text-center my-3">
+    <h2 class="font-weight-light">Check Out Our Plan's</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img id="imgcard" class="img-fluid" src="/media/rip.jpg">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Ripped As Saiyan</h4>
+                            </div>
+                            <hr>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Calorie deficit Customized Diet Plan</li>
+                                <li>Customized Workout Plan</li>
+                                <li>HIT</li>
+                                <li>Weekly Check</li>
+                                <li>24/7 Assistance</li>
+                                <li>Supplement Guidance</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img id="imgcard" class="img-fluid" src="/media/bulk1.jpg">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Clear Muscle Gain</h4>
+
+                            </div>
+                            <hr>
+
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Calorie Surplus Customized Diet Plan</li>
+                                <li>Customized Workout Plan</li>
+                                <li>Weekly Check</li>
+                                <li>24/7 Assistance</li>
+                                <li>Supplement Guidance</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img id="imgcard" class="img-fluid" src="/media/bulk.jpg">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Bulk Muscle Gain</h4>
+                            </div>
+                            <hr>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li> Customized Diet Plan</li>
+                                <li>Customized Workout Plan</li>
+                                <li>Bulking Magic Tricks</li>
+                                <li>Weekly Check</li>
+                                <li>24/7 Assistance</li>
+                                <li>Supplement Guidance</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img id="imgcard" class="img-fluid" src="/media/fripped.jpg">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Ripped Female Plan</h4>
+
+                            </div>
+                            <hr>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Calorie deficit Customized Diet Plan</li>
+                                <li>Customized Workout Plan</li>
+                                <li>+ Cheat meals</li>
+                                <li>HIT/Cardio</li>
+                                <li>Weekly Check</li>
+                                <li>24/7 Assistance</li>
+                                <li>Supplement Guidance</li>
+                                <li>Supplement/No Supplement</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img id="imgcard" class="img-fluid" src="/media/fbulk.jpg">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Tonned Body Stack</h4>
+
+                            </div>
+                            <hr>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li> Customized Diet Plan</li>
+                                <li>Customized Workout Plan outdoor/indoor</li>
+                                <li>+ Cheat meals</li>
+                                <li>Weekly Check</li>
+                                <li>24/7 Assistance</li>
+                                <li>Supplement/No Supplement</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img id="imgcard" class="img-fluid" src="/media/car.jpg">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Standard Fitness Plan</h4>
+
+                            </div>
+                            <hr>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li> Customized Diet Plan</li>
+                                <li>Customized Workout Plan outdoor/indoor</li>
+                                <li>Weekly Check</li>
+                                <li>24/7 Assistance</li>
+                                <li>Supplement/No Supplement</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <h5 class="mt-2">Swipe left to check more plan's --></h5>
+    <hr>
+</div>
+<!-- price info -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Pricing</h1>
+    <p class="lead">Below are the pricing for all our plan .Choose your desired plan and start walking on road of your transformation and surpass your limits and unlock your potential.</p>
+</div>
+
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Elite</h4>
+                <h5 class="card-title pricing-card-title">4 <small class="text-muted" style="font-weight: lighter;">Weeks</small></h5>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">₹ 1999 </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li> Customized Diet Plan</li>
+                    <li>Customized Workout Plan</li>
+                    <li>Weekly Progress Check</li>
+                    <li>24/7 Assistance</li>
+                    <li>Supplement Guidance</li>
+                    <li>Workout Guidance</li>
+
+                </ul>
+                <a class="btn btn-outline-danger btn-lg" href="/transform/Register" role="button">Sign Up</a>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Pro</h4>
+                <h5 class="card-title pricing-card-title">12 <small class="text-muted">Weeks</small></h5>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">₹ 2999 </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li> Customized Diet Plan</li>
+                    <li>Customized Workout Plan</li>
+                    <li>Weekly Progress Check</li>
+                    <li>24/7 Assistance</li>
+                    <li>Supplement Guidance</li>
+                    <li>Workout Guidance</li>
+                </ul>
+                <a class="btn btn-outline-danger btn-lg" href="/transform/Register" role="button">Sign Up</a>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Premium</h4>
+                <h5 class="card-title pricing-card-title">24 <small class="text-muted">Weeks</small></h5>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">₹ 4999 </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li> Customized Diet Plan</li>
+                    <li>Customized Workout Plan</li>
+                    <li>Weekly Progress Check</li>
+                    <li>24/7 Assistance</li>
+                    <li>Supplement Guidance</li>
+                    <li>Workout Guidance</li>
+                </ul>
+                <a class="btn btn-outline-danger btn-lg" href="/transform/Register" role="button">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script>
+        $('#recipeCarousel').carousel({
+            interval: 10000
+        })
+
+        $('.carousel .carousel-item').each(function() {
+            var minPerSlide = 3;
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < minPerSlide; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+    </script>
+    {% endblock %}
